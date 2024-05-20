@@ -20,14 +20,49 @@
     <a href="javascript:const audio = document.createElement('audio');audio.src = 'test.ogg';audio.play();">點我出現歡迎訊息</a>
 
     <script>
+        //const video = document.getElementById('123');
+        //console.log(video);
         
+        function playVideo(){
+            const video = document.getElementById('123');
+            video.style.display = 'block';
+            console.log(video);
+            if (video.requestFullscreen) {
+            video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { /* Firefox */
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { /* IE/Edge */
+                video.msRequestFullscreen();
+            }
+            video.play();
+            video.addEventListener('ended', function() {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) { /* Safari */
+                    document.webkitExitFullscreen();
+                } else if (document.mozCancelFullScreen) { /* Firefox */
+                    document.mozCancelFullScreen();
+                } else if (document.msExitFullscreen) { /* IE/Edge */
+                    document.msExitFullscreen();
+                }
+                video.style.display = 'none';
+            },false);
+        }
         </script>
-        <a href="#" onclick="playAudio()">超連結2</a>
+
+        <a href="https://google.com">123123</a>
+        <a href="#" onclick="playVideo()">超連結2</a>
 
         <button onclick="playAudio();">播放</button>
 
 
-        
+     <a href='#' onclick="playVideo();" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">qwe</a>
+     <video  id="123" style="display: none;">
+        <source src="assets/video/lai.mp4" type="video/mp4" name="123" >
+        Your browser does not support the video tag.
+    </video>
     <div class="modal fade" id="loginModal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -35,7 +70,7 @@
                     <h1 style="text-align: center;">威廷好電</h1>
                 </div>
                 <div class="modal-body">
-                    <img src="images/whoami.png">
+                    
 
                 </div>
                 <div class="modal-footer">

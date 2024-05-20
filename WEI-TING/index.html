@@ -9,15 +9,17 @@
 		<link rel="icon" href="./assets/icon/1716136309.ico">
 		<title>威廷好電</title>
 		
-
-
+		<!--bootstrap會使動畫變慢-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload" >
-
+		
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -43,7 +45,11 @@
 							<div style="width: 240%;display: flex">
 							<p style="width: auto;">
 								<br>
-								嗨，大家好！歡迎來到我的個人網站。<br>我是賴威廷，很高興你來訪。<br>在這裡，你將有機會了解我的學術興趣、專業技能<br>以及生活中的點滴。<br>請隨意瀏覽我的內容，如果有任何問題或建議，都歡迎與我分享。<br>期待與你交流和分享，讓我們一起探索新的知識和機會！
+								嗨，大家好！歡迎來到我的個人網站。<br>我是賴威廷，很高興你來訪。<br>在這裡，你將有機會了解我的學術興趣、專業技能<br>以及生活中的點滴。<br>請隨意瀏覽我的內容，如果有任何問題或建議，都歡迎與我分享。<br>期待與你交流和分享，一起探索新的知識和機會！<br>
+								<br>
+
+								不是因為看見希望而堅持，而是因為堅持才看見希望<br>
+								肯吃苦也是一種天份<br>
 									
 							</p>
 							<img src="images/weihead.jpg" alt="Logo" width="50%" height="50%"/>
@@ -58,17 +64,18 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a  onclick="playAudio()">
+							<a href="#" onclick="playVideo('WhoamI');" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
 								<img src="images/whoami.png" alt="" data-position="center center" width="100%" height="100%"/>
-
 							</a>
+							
+								
 								
 								
 								
 							
 							<div class="content">
 								<div class="inner">
-									<a href="#" style="font-size: 200%;">我是誰</a>
+									<p  style="font-size: 200%;"><b>我是誰</b></p>
 									<p>大家好，我是賴威廷，來自一個充滿活力的城市-台北。我對程式充滿熱情，並目標成為中興大學的第一名。<br>
 								
 										我一直以來都對微積分領域有著濃厚的興趣，並且在這個領域表現出色。我相信，通過不斷地學習和實踐，我可以在這個領域中取得更大的成就。<br>
@@ -76,7 +83,7 @@
 										此外，我也對資料結構和演算法有著深入的了解和經驗。我喜歡挑戰自己，解決各種複雜的問題，並且不斷地追求技術的提升。<br>								
 										謝謝大家對我的聆聽，我期待著在中興大學展開新的學習和挑戰，與各位一起共同成長。</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a  type="button"class="button" onclick="playAudio();">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -88,41 +95,42 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>我都在幹些啥事呢</h2>
+							<p>我是一個菜鳥工程師，目前正在專研資料結構、演算法等，目標是競程全國第一，目前已經達成中興第一。<br>
+								同時我也是影片剪輯師，除了有自己頻道之外，也有配合的頻道幫看他人剪片等等。<br>
+								我也是教學家，我都要教我的笨笨室友，危機分、腺性袋鼠、抓挖程式、裸雞設雞和梨傘數學。<br>
+								<span style="background-color: aliceblue; color: crimson;">我相信我的室友如果沒有我的幫助一定被當光光。</span><br>
+								<b><i><del>同時我也是🈸</del></i></b>
+							</p>
 							<div class="features">
 								<section>
 									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>資料結構and演算法</h3>
+									<p>我會一大堆奇怪資料結構，還有演算法，目標成為全國第一人，目前已達成全國第一人。
+									</p>
 								</section>
 								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									
+									<span class="icon brands major fa-youtube"></span>
+									<h3>我也是一名剪輯師</h3>
+									<p>我目前有在經營一個<a href="https://www.youtube.com/@eggeggwe1750">youtube頻道</a>，除此之外我還有幫其他人剪輯影片，更是在放火迷因大賽奪得入選決賽佳績。</p>
 								</section>
 								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<span class="icon solid major fa-school"></span>
+									<h3>教育家</h3>
+									<p>正所謂古人云：<br>『師者，所以傳道、授業、解惑也』。<br>我目前立志於解惑也，都幫我的笨笨室友解惑包括：危機分、腺性袋鼠、抓挖程式、裸雞設雞和梨傘數學。<br>經過此番經歷，我相信我對於師者有更加一番的領悟。
+									</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>空手道社長</h3>
+									<p>我現在是中興大學空手道社社長，<br>
+									目前緞帶為咖啡帶，希望有招一日我會成為黑帶高手，我曾經利用空手道技巧的高階事蹟是徒手批西瓜<a href="">(點我看影片)</a>。
+									</p>
 								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
+								
 							</div>
-							<ul class="actions">
+							<ul class="actions" style="pointer-events: none;">
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul>
 						</div>
@@ -135,15 +143,20 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Copyright©2024-2024賴威廷本人 Design: <a href="https://www.instagram.com/laitingyue/">yue-lai and 威廷本人</a></li>
 					</ul>
 				</div>
 			</footer>
-
+		<!--彈出式窗-->
+	
+		<video  id="WhoamI"  style="display: none;" >
+			<source src="assets/video/lai.mp4" type="video/mp4" wigth="100%"height="100%">
+							Your browser does not support the video tag.
+		</video>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<!--<script src="assets/js/jquery.scrolly.min.js"></script>-->
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>

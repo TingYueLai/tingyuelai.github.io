@@ -6,16 +6,47 @@
 function playAudio() {
 	//alert("etst");
 	const audio = document.createElement("audio");
-	audio.src = "test.ogg";
+	audio.src = "assets/audio/test.ogg";
 	audio.play();
+	//alert("wewe腳");
 }
+
+function playVideo(){
+	const video = document.getElementById('WhoamI');
+	video.style.display = 'block';
+	console.log(video);
+	if (video.requestFullscreen) {
+	video.requestFullscreen();
+	} else if (video.mozRequestFullScreen) { /* Firefox */
+		video.mozRequestFullScreen();
+	} else if (video.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+		video.webkitRequestFullscreen();
+	} else if (video.msRequestFullscreen) { /* IE/Edge */
+		video.msRequestFullscreen();
+	}
+	video.play();
+	video.addEventListener('ended', function() {
+		if (document.exitFullscreen) {
+			document.exitFullscreen();
+		} else if (document.webkitExitFullscreen) { /* Safari */
+			document.webkitExitFullscreen();
+		} else if (document.mozCancelFullScreen) { /* Firefox */
+			document.mozCancelFullScreen();
+		} else if (document.msExitFullscreen) { /* IE/Edge */
+			document.msExitFullscreen();
+		}
+		video.style.display = 'none';
+	},false);
+}
+
 function startq(e){
 	var yes = confirm(e);
 	if (yes) {
 		alert('沒錯你答對了');
 	} else {
-		startq('你確定威廷不電嗎？？')
+		startq('所以確定威廷式電神嗎？')
 	}
+	return ;
 }
 (function($) {
 
