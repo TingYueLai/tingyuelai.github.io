@@ -3,8 +3,20 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-
+function playAudio() {
+	//alert("etst");
+	const audio = document.createElement("audio");
+	audio.src = "test.ogg";
+	audio.play();
+}
+function startq(e){
+	var yes = confirm(e);
+	if (yes) {
+		alert('沒錯你答對了');
+	} else {
+		startq('你確定威廷不電嗎？？')
+	}
+}
 (function($) {
 
 	var	$window = $(window),
@@ -28,7 +40,8 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+				startq('威廷電嗎？');
+			}, 300);
 		});
 
 	// Forms.
