@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>跳出視窗</title>
+    <meta charset="UTF-8">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap 導入程式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- css連結 -->
+    <link rel="stylesheet" href="/Users/tingyuelai/Desktop/web/WEI-TING/test.css">
+</head>
+
+<body>
+    
+    <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">威廷好電</a>
+    <a href="javascript:const audio = document.createElement('audio');audio.src = 'test.ogg';audio.play();">點我出現歡迎訊息</a>
+
+    <script>
+        function playAudio() {
+            //alert("etst");
+            const audio = document.createElement("audio");
+            audio.src = "test.ogg";
+            audio.play();
+        }
+        </script>
+        <a href="#" onclick="playAudio()">超連結2</a>
+
+        <button onclick="playAudio();">播放</button>
+
+
+        
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 style="text-align: center;">威廷好電</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="images/whoami.png">
+
+                </div>
+                <div class="modal-footer">
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
